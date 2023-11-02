@@ -9,11 +9,11 @@ public class LevelSelectionScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        int levelAt = PlayerPrefs.GetInt("levelAt", 2);
+        int MaxLevel = PlayerPrefs.GetInt("MaxLevel", 1);
 
-        for (int i = 0; i < lvlButtons.Length; i++) {
-            if (i + 2 > levelAt) {
-                lvlButtons[i].interactable = false;
+        for (int i = 1; i <= lvlButtons.Length; i++) {
+            if (i > MaxLevel) {
+                lvlButtons[i-1].interactable = false;
             }
         }
     }

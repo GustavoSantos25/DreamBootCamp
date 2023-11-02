@@ -1,0 +1,26 @@
+{
+    "Inputs": [
+        {
+            "InputValue" : 7
+        },
+        {
+            "InputValue": 8
+        },
+        {
+            "InputValue": 9
+        }
+    ],
+    "Commands": [
+        {
+            "Name": "input"
+        }, 
+        {
+            "Name": "output"
+        },
+        {
+            "Name": "jump"
+        }
+    ],
+    "question": "Pegue cada elemento da entrada (INPUT) e leve-o para a saída (OUTPUT). 3",
+    "numberOfInputSlots": 2
+}

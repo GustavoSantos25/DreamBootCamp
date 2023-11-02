@@ -5,8 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuScript : MonoBehaviour
 {
+    void Start(){
+        PlayerPrefs.SetInt("LevelSelectionScene", 1);
+        PlayerPrefs.SetInt("LevelScene", 2);
+    }
+
     public void playGame() {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(PlayerPrefs.GetInt("LevelSelectionScene"));
     }
 
     public void quitGame() {
